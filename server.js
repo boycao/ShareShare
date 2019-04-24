@@ -4,6 +4,10 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
+//use the body parser middleware
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
+
 //Use the router module
 const post = require('./routes/api/post')
 const profile = require('./routes/api/profile')
@@ -24,5 +28,5 @@ app.use('/routes/api/profile',profile)
 app.use('/routes/api/user',user)
 
 //Setup the localhost and test sample
-const port = process.env.port || 5000
+const port = process.env.port || 6000
 app.listen(port,()=>console.log(`server running on ${port}`))
