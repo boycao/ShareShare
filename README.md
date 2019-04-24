@@ -14,4 +14,4 @@ A profile where users could have avator, bio, profile, history posts, etc
 Users could surf the website according to the category tag. They can also post their own experience to the category tag. One post could have multiple tag.
 
 # Tech Spechs
-This application will use React.js in the frontend, Node.js as the server, and MongoDB as the databse.
+This application will use React.js in the frontend, Node.js as the server, and MongoDB as the databse. In the future, I will also use Kotlin and Swift to build a mobile app of this website.
